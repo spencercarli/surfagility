@@ -18,7 +18,7 @@ get_header(); ?>
   <?php else: ?>
     <div class="post-wrapper top-small-pad">
   <?php endif; ?>
-      <div class="col-lg-7 col-lg-offset-3 col-sm-10 col-sm-offset-1">
+      <div class="col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1">
         <h1 class="post-title" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
           <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_permalink(); ?>">
             <?php the_title(); ?>
@@ -57,6 +57,11 @@ get_header(); ?>
         <div class="navigation">
           <div class="alignleft"><?php previous_posts_link('&laquo; Previous Entries') ?></div>
           <div class="alignright"><?php next_posts_link('Next Entries &raquo;','') ?></div>
+        </div>
+        <div class="row">
+          <hr>
+          <div class="col-lg-3"><?php get_template_part( 'partials/author', 'img' ); ?></div>
+          <div class="col-lg-9"><?php get_template_part( 'partials/author', 'bio'); ?></div>
         </div>
         <div class="author-footer row only-display-small">
           <div class="row">
