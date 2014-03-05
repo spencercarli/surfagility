@@ -99,7 +99,12 @@ get_header(); ?>
     </div>
   </div>
 </div>
-<?php comments_template(); ?>
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1">
+    <?php comments_template(); ?>
+  </div>
+</div>
+
 <!-- row div ends in footer -->
 <!-- container div ends in footer -->
 <?php get_footer(); ?>
