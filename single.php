@@ -18,12 +18,15 @@ get_header(); ?>
   <?php else: ?>
     <div class="post-wrapper top-small-pad">
   <?php endif; ?>
-      <div class="col-lg-8 col-sm-8 post-content">
+      <div class="col-lg-7 col-lg-offset-3 col-sm-10 col-sm-offset-1">
         <h1 class="post-title" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
           <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_permalink(); ?>">
             <?php the_title(); ?>
           </a>
         </h1>
+        <div class="display-small post-author small-bold">
+                By <?php the_author_posts_link(); ?>
+            </div>
         <div class="post-subtitle">
             <?php if (function_exists('the_subtitle')){ the_subtitle(); }?> 
         </div>
@@ -69,7 +72,7 @@ get_header(); ?>
           <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
         <?php endif; ?>
       </div>
-      <div class="col-lg-4 col-sm-4 post-sidebar">
+      <!-- <div class="col-lg-4 col-sm-4 post-sidebar">
         <div class="sidebar-body row <?php if ( ! $featured_image ) : echo "lower-post-sidebar";  endif; ?>">
           <div class="sidebar-inner">
             <?php $author_email = get_the_author_meta('email'); ?>
@@ -87,12 +90,11 @@ get_header(); ?>
             <?php get_template_part( 'partials/author', 'social' ); ?>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </div>
 <?php comments_template(); ?>
-
 <!-- row div ends in footer -->
 <!-- container div ends in footer -->
 <?php get_footer(); ?>
