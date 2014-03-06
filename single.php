@@ -48,6 +48,9 @@ get_header(); ?>
         </div>
         <div class="post-extras">
           <?php get_template_part('partials/post', 'metadata'); ?>
+          <div class="share">
+            <?php get_template_part('partials/share', 'buttons'); ?>
+          </div>
         </div>
         <div class="wp-pagination">
           <?php wp_link_pages(); ?>
