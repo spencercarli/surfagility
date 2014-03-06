@@ -39,7 +39,7 @@ get_header(); ?>
       <div class="missing-cover-img">
       <?php endif; ?>
         <div class="cover-body <?php echo $personal_avatar ? '' : 'missing-avatar' ; ?>">
-          <div class="author-photo" style="background-image: url('http://www.gravatar.com/avatar/<?php echo md5( $curauth->user_email ); ?>s=64')"></div>
+          <div class="author-photo" style="background-image: url('http://www.gravatar.com/avatar/<?php echo md5( $curauth->user_email ); ?>?s=100')"></div>
           <div class="cover-body-inner">
             <h1 class="cover-title">
               <?php echo $curauth->display_name; ?>
