@@ -24,12 +24,12 @@ get_header(); ?>
             <?php the_title(); ?>
           </a>
         </h1>
-        <div class="display-small post-author small-bold">
-            By <?php the_author_posts_link(); ?>
-        </div>
         <div class="post-subtitle">
             <?php if (function_exists('the_subtitle')){ the_subtitle(); }?> 
         </div>
+        <!-- <div class="display-small post-author small-bold">
+            By <?php the_author_posts_link(); ?>
+        </div> -->
         <div class="only-display-small post-author small-bold">
           <span class="glyphicon glyphicon-copyright-mark"></span>
           <?php the_author_posts_link(); ?>
