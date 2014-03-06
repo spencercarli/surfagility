@@ -54,8 +54,8 @@ get_header(); ?>
         </div>
         <?php endwhile; ?>
         <div class="navigation">
-          <div class="alignleft"><?php previous_posts_link('&laquo; Previous Entries') ?></div>
-          <div class="alignright"><?php next_posts_link('Next Entries &raquo;','') ?></div>
+          <div class="pull-left btn btn-default"><?php previous_post('&laquo; %','Previous Post','no'); ?></div>
+          <div class="pull-right btn btn-default"><?php next_post('% &raquo;','Next Post','no'); ?></div>
         </div>
         <div class="row">
           <hr>
