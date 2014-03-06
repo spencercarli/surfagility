@@ -910,10 +910,29 @@ label {
   height: 35px;
   display: inline;
   float: right;
+  margin: 10px 0;
 }
 
 .share a {
   border:none;
+}
+
+@media (max-width: 575px) {
+  .share {
+    display:block;
+    text-align: center;
+    float:none;
+  }
+
+  .postmetadata {
+    display: block; 
+    float: none; 
+    text-align:center;
+  }
+
+  .navigation {
+    margin-top: 57px;
+  }
 }
 
 .btn-tw {

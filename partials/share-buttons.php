@@ -18,5 +18,5 @@
 
 ?>
 <script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
-<a href="<?php echo $fb_link ?>" class="btn btn-primary btn-fb pull-right"><i class="icon-facebook"></i> Share on Facebook</a>
-<a href="<?php echo $tw_link ?>"  target="_blank" class="btn btn-primary btn-tw pull-right"><i class="icon-twitter"></i> Share on Twitter</a>
+<a href="<?php echo $fb_link ?>" class="btn btn-primary btn-fb"><i class="icon-facebook"></i> Share on Facebook</a>
+<a href="<?php echo $tw_link ?>"  target="_blank" class="btn btn-primary btn-tw"><i class="icon-twitter"></i> Share on Twitter</a>
