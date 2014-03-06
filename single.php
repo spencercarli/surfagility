@@ -20,9 +20,9 @@ get_header(); ?>
   <?php endif; ?>
       <div class="col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1">
         <h1 class="post-title" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-          <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_permalink(); ?>">
+          <!-- <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_permalink(); ?>"> -->
             <?php the_title(); ?>
-          </a>
+          <!-- </a> -->
         </h1>
         <div class="post-subtitle">
             <?php if (function_exists('the_subtitle')){ the_subtitle(); }?> 
