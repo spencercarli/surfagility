@@ -144,7 +144,7 @@ get_header(); ?>
             </div>
             <div class="post-info">
               <span class="post-date small-light-text">
-                <span class="glyphicon glyphicon-calendar"></span>
+                <!-- <span class="glyphicon glyphicon-calendar"></span> -->
                 <?php the_time('F jS, Y') ?>
               </span>
               <span class="post-readtime small-light-text">

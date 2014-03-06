@@ -25,8 +25,8 @@ get_header(); ?>
           </a>
         </h1>
         <div class="display-small post-author small-bold">
-                By <?php the_author_posts_link(); ?>
-            </div>
+            By <?php the_author_posts_link(); ?>
+        </div>
         <div class="post-subtitle">
             <?php if (function_exists('the_subtitle')){ the_subtitle(); }?> 
         </div>
@@ -36,7 +36,6 @@ get_header(); ?>
         </div>
         <div class="post-info">
           <span class="post-date small-light-text">
-            <span class="glyphicon glyphicon-calendar"></span>
             <?php the_time('F jS, Y') ?>
           </span>
           <span class="post-readtime small-light-text">
@@ -63,7 +62,7 @@ get_header(); ?>
           <div class="col-lg-3"><?php get_template_part( 'partials/author', 'img' ); ?></div>
           <div class="col-lg-9"><?php get_template_part( 'partials/author', 'bio'); ?></div>
         </div>
-        <div class="author-footer row only-display-small">
+        <!-- <div class="author-footer row only-display-small">
           <div class="row">
             <div class="col-xs-12">
               <hr>
@@ -71,7 +70,7 @@ get_header(); ?>
               <div class="col-xs-7"><?php get_template_part( 'partials/author', 'bio'); ?></div>
             </div>
           </div>
-        </div>
+        </div> -->
       
         <?php else: ?>
           <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
