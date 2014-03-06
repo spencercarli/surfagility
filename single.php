@@ -62,39 +62,12 @@ get_header(); ?>
           <div class="col-lg-3"><?php get_template_part( 'partials/author', 'img' ); ?></div>
           <div class="col-lg-9"><?php get_template_part( 'partials/author', 'bio'); ?></div>
         </div>
-        <!-- <div class="author-footer row only-display-small">
-          <div class="row">
-            <div class="col-xs-12">
-              <hr>
-              <div class="col-xs-3"><?php get_template_part( 'partials/author', 'img' ); ?></div>
-              <div class="col-xs-7"><?php get_template_part( 'partials/author', 'bio'); ?></div>
-            </div>
-          </div>
-        </div> -->
       
         <?php else: ?>
           <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
         <?php endif; ?>
       </div>
-      <!-- <div class="col-lg-4 col-sm-4 post-sidebar">
-        <div class="sidebar-body row <?php if ( ! $featured_image ) : echo "lower-post-sidebar";  endif; ?>">
-          <div class="sidebar-inner">
-            <?php $author_email = get_the_author_meta('email'); ?>
-            <div class="author-photo" style="background-image: url('http://www.gravatar.com/avatar/<?php echo md5($author_email)?>s=64')"></div>
-            <div class="display-small post-author small-bold">
-                By <?php the_author_posts_link(); ?>
-            </div>
-            <div class="author-bio">
-              <?php if ( get_the_author_meta('description') ) : ?>
-                  <div class="section-seperator"></div>
-                  <?php echo get_the_author_meta('description'); ?>
-                  <div class="section-seperator"></div>
-              <?php endif; ?>
-            </div>
-            <?php get_template_part( 'partials/author', 'social' ); ?>
-          </div>
-        </div>
-      </div> -->
+
     </div>
   </div>
 </div>
