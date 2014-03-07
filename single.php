@@ -18,7 +18,7 @@ get_header(); ?>
   <?php else: ?>
     <div class="post-wrapper top-small-pad">
   <?php endif; ?>
-      <div class="col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1">
+      <div class="col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
         <h1 class="post-title" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
           <!-- <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_permalink(); ?>"> -->
             <?php the_title(); ?>
@@ -30,10 +30,10 @@ get_header(); ?>
         <!-- <div class="display-small post-author small-bold">
             By <?php the_author_posts_link(); ?>
         </div> -->
-        <div class="only-display-small post-author small-bold">
+        <!-- <div class="only-display-small post-author small-bold">
           <span class="glyphicon glyphicon-copyright-mark"></span>
           <?php the_author_posts_link(); ?>
-        </div>
+        </div> -->
         <div class="post-info">
           <span class="post-date small-light-text">
             <?php the_time('F jS, Y') ?>
