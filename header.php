@@ -45,4 +45,6 @@
       </div>
     </a>
       <div class="container-fluid page-wrapper">
-        <div class="row page-container <?php if (is_single() || is_page()) {echo 'page-surround';} ?>">
+<!--         <div class="row page-container <?php if (is_single() || is_page()) {echo 'page-surround';} ?>"> -->
+
+        <div class="row page-container">
