@@ -25,7 +25,7 @@ get_header(); ?>
           <!-- </a> -->
         </h1>
         <div class="post-subtitle">
-            <?php if (function_exists('the_subtitle')){ the_subtitle(); }?> 
+            <?php if (function_exists('the_subtitle')){ the_subtitle(); }?>
         </div>
         <!-- <div class="display-small post-author small-bold">
             By <?php the_author_posts_link(); ?>
@@ -41,7 +41,7 @@ get_header(); ?>
           <span class="post-readtime small-light-text">
             <span class="glyphicon glyphicon-time"></span>
             <?php echo round(wcount() / 250, 0); ?> minute read
-          </span> 
+          </span>
         </div>
         <div class="post-entry">
             <?php the_content(); ?>
@@ -65,7 +65,7 @@ get_header(); ?>
           <div class="col-lg-3"><?php get_template_part( 'partials/author', 'img' ); ?></div>
           <div class="col-lg-9"><?php get_template_part( 'partials/author', 'bio'); ?></div>
         </div>
-      
+
         <?php else: ?>
           <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
         <?php endif; ?>

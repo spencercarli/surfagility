@@ -20,11 +20,11 @@ get_header(); ?>
 ?>
 <?php
   $template_location = get_bloginfo('template_directory');
-  $avatar_address = $template_location . "/images/surfagility.jpg"; 
+  $avatar_address = $template_location . "/images/surfagility.jpg";
   $personal_avatar = false;
   if ( function_exists('has_wp_user_avatar')) {
     if ( has_wp_user_avatar($curauth->ID) ) {
-      $avatar_address = get_wp_user_avatar_src($curauth->ID, 'large'); 
+      $avatar_address = get_wp_user_avatar_src($curauth->ID, 'large');
       $personal_avatar = true;
     }
   }
@@ -32,7 +32,7 @@ get_header(); ?>
 <!-- container div starts in header -->
 <!-- row div starts in header -->
   <div class="author-page">
-    <div class="col-lg-5 col-sm-5 cover" > 
+    <div class="col-lg-5 col-sm-5 cover" >
       <?php if ( $personal_avatar ) : ?>
       <div class="cover-img" style="background-image:url('<?php echo $avatar_address; ?>')">
       <?php else: ?>
@@ -115,7 +115,7 @@ get_header(); ?>
         </div>
       <hr>
     </div>
-     <?php if ( have_posts() ) : ?> 
+     <?php if ( have_posts() ) : ?>
       <?php while ( have_posts() ) : the_post(); ?>
         <h1 id="post-<?php the_ID(); ?>">
           <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_permalink(); ?>">
@@ -124,13 +124,13 @@ get_header(); ?>
         </h1>
         <div class="post-info">
           <span class="post-date small-light-text">
-            <span class="glyphicon glyphicon-calendar"></span>
+<!--             <span class="glyphicon glyphicon-calendar"></span> -->
             <?php the_time('F jS, Y') ?>
           </span>
           <span class="post-readtime small-light-text">
             <span class="glyphicon glyphicon-time"></span>
             <?php echo round(wcount() / 250, 0); ?> minute read
-          </span> 
+          </span>
         </div>
         <div class="post-entry">
           <?php custom_excerpt(75, '...More') ?>
