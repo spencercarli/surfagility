@@ -33,7 +33,7 @@
           <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
             <?php foreach ( $pages as $page ) : ?>
                 <li><a tabindex="-1" data-target="#" href="<?php echo $page->guid; ?>"><?php echo $page->post_title;?></a></li>
-            <?php endforeach; ?> 
+            <?php endforeach; ?>
           </ul>
         </li>
       </ul>
@@ -45,4 +45,4 @@
       </div>
     </a>
       <div class="container-fluid page-wrapper">
-        <div class="row page-container">
+        <div class="row page-container <?php if (is_single() || is_page()) {echo 'page-surround';} ?>">
